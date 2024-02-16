@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    int a[]={1,2,3,4,4,4,5,1};
+    int a[]={10,5,10,15,10,5};
     unordered_map<int,int>mpp;
     for(int i=0;i<sizeof(a) / sizeof(a[0]);i++)
     {

@@ -65,6 +65,38 @@ void printrev_numberbybacktracking(int i,int n)
         cout<<i<<endl;
     }
 }
+
+vector<int> printNos(int x)
+{
+    vector<int> result;
+    if(x>0)
+
+    {
+       result= printNos(x-1);
+        result.push_back(x);
+      }
+        return result;
+}
+vector<string> printNTimes(int n) {
+	// Write your code here.
+
+	if(n>0)
+	{
+		cout<<"Coding Ninjas";
+		printNTimes(n-1); 
+	}
+}
+vector<int> printNos2(int x) {
+    // Write Your Code Here
+    vector<int>result;
+    if(x>0)
+    {    
+        result=printNos(x-1);
+        result.push_back(x);
+
+    }
+    return result;
+}
 int main() {
     // printinfinite();
     int n;
@@ -82,6 +114,9 @@ int main() {
 //printnumberforntimes(1,n);
 //printnumberinreverse(1,n);
 //printnumberbybacktracking(n,n);
-printrev_numberbybacktracking(1,n);
+//printrev_numberbybacktracking(1,n);
+cout<<printNos(n);
+cout<<printNos2(n);
+//printNTimes(n);
     return 0;
 }
