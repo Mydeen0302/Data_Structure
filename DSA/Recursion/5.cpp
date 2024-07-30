@@ -28,7 +28,7 @@ int fibbonacciOfN(int n)
     }
 }
 int main() {
-  string s="mm";
+  string s="mm:m";
 
   cout<<boolalpha<<checkpalindromme(0,s);
 
